@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Física </title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-box">
+            <h1> Bienvenidos al juego de Física </h1>
+        </div>
+        <h3>Explora y adquiere más conocimientos respecto a Física. </h3>
+        
+        <div class="info-container">
+            <div class="info-box">
+                <h2>Juego para bachillerato</h2>
+                <p>En este juego reforzarás eso que has aprendido de tus clases de Fisica.
+                <p>Esta es una página de simulación donde puedes ver cómo actúa un objeto lanzado al aire según las condiciones de velocidad inicial, ángulo de lanzamiento y gravedad.</p>
+                <p> Estos factores determinan la trayectoria y el tiempo de vuelo del objeto, permitiéndote observar cómo varían su altura y distancia recorrida en función de estos parámetros.</p>
+                </p>
+                <p>¿Listo para empezar el juego?</p>
+                <button id="boton-sonido">Empezar juego</button>
+                <audio id="sonido-boton" src="sonido.mp3"></audio>
+                <script>
+                    const boton = document.getElementById('boton-sonido');
+                    const sonido = document.getElementById('sonido-boton');
+                
+                    boton.addEventListener('click', () => {
+                        sonido.currentTime = 0;
+                        sonido.play();
+                
+                        sonido.onended = () => {
+                            window.location.href = 'bachiller.html';
+                        };
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

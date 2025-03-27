@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('fondojuego.jpg');
+    color: #333333;
+}
+
+header {
+    background-color: #7124ff7a;
+    color: rgb(255, 251, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 251, 0, 0.623);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #fbff00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#simulationCanvas {
+    background: #cfe2f3;
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 400px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background: #0026ff8c;
+    color: white;
+}
+
+#exit {
+    margin-top: 20px;
+    background-color: #8c00ffa8;
+    color: rgb(0, 0, 0); 
+}
+
+#exit:hover {
+    background-color: #8c00ffa8;
+}
